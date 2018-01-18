@@ -16,9 +16,9 @@ enum CellType: Int {
 }
 
 /// 屏幕的宽
-let screenWidth = UIScreen.main.bounds.width
+let screenWidth = UIScreen.main.bounds.size.width
 /// 屏幕的高
-let screenHeight = UIScreen.main.bounds.height
+let screenHeight = UIScreen.main.bounds.size.height
 
 /// iid 未登录用户 id，只要安装了今日头条就会生成一个 iid
 /// 可以在自己的手机上安装一个今日头条，然后通过 charles 抓取一下这个 iid，

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HTTheyAlsoUseCell" customModule="HeadlineOfToday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-r2-bkk" userLabel="顶部">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他们也在用头条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKw-lt-v2N" userLabel="Left Label">
+                                <rect key="frame" x="15" y="0.0" width="108" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-hX-R08" userLabel="Right Button">
+                                <rect key="frame" x="243" y="0.0" width="62" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="查看更多">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FgA-hX-R08" secondAttribute="trailing" constant="15" id="8aU-P8-mSV"/>
+                            <constraint firstItem="hKw-lt-v2N" firstAttribute="top" secondItem="PFU-r2-bkk" secondAttribute="top" id="YFL-E5-nTA"/>
+                            <constraint firstAttribute="bottom" secondItem="hKw-lt-v2N" secondAttribute="bottom" id="a5a-fY-EWS"/>
+                            <constraint firstItem="FgA-hX-R08" firstAttribute="top" secondItem="PFU-r2-bkk" secondAttribute="top" id="dKe-VT-xrr"/>
+                            <constraint firstAttribute="bottom" secondItem="FgA-hX-R08" secondAttribute="bottom" id="iMo-WD-1hG"/>
+                            <constraint firstItem="hKw-lt-v2N" firstAttribute="leading" secondItem="PFU-r2-bkk" secondAttribute="leading" constant="15" id="nOX-HP-lta"/>
+                            <constraint firstAttribute="height" constant="50" id="tGX-NI-46L"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43s-0e-eSH" userLabel="底部">
+                        <rect key="frame" x="0.0" y="280" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="HIr-kB-4FY"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-wW-a8o">
+                        <rect key="frame" x="0.0" y="50" width="320" height="229.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VPZ-GC-Noh">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="43s-0e-eSH" secondAttribute="trailing" id="1lS-Vk-etD"/>
+                    <constraint firstItem="PFU-r2-bkk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Nt-YC-kek"/>
+                    <constraint firstItem="43s-0e-eSH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YCG-xC-MqZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="43s-0e-eSH" secondAttribute="bottom" constant="-11" id="bLL-uQ-JNW"/>
+                    <constraint firstItem="43s-0e-eSH" firstAttribute="leading" secondItem="PFU-r2-bkk" secondAttribute="leading" id="swM-ae-QtN"/>
+                    <constraint firstItem="43s-0e-eSH" firstAttribute="trailing" secondItem="PFU-r2-bkk" secondAttribute="trailing" id="x5E-al-VD3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomView" destination="43s-0e-eSH" id="dVA-q2-9FT"/>
+                <outlet property="collectionView" destination="fdt-wW-a8o" id="Rf0-L6-kql"/>
+                <outlet property="leftLabel" destination="hKw-lt-v2N" id="a91-Kk-eSh"/>
+                <outlet property="rightButton" destination="FgA-hX-R08" id="UW9-dP-QQ3"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

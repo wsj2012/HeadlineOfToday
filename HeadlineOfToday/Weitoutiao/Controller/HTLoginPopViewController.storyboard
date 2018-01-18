@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Pop View Controller-->
+        <scene sceneID="drC-T2-cmE">
+            <objects>
+                <viewController id="2IN-yl-Q8Q" customClass="HTLoginPopViewController" customModule="HeadlineOfToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebv-03-R88">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djW-TH-4ds">
+                                <rect key="frame" x="114" y="505" width="92" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="更多登录方式 &gt;">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreLoginButtonClicked" destination="2IN-yl-Q8Q" eventType="touchUpInside" id="CWW-LE-JD9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录关注更多好友状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wq-cm-1Ep">
+                                <rect key="frame" x="73" y="70" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-oy-KQM">
+                                <rect key="frame" x="286" y="30" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="aST-nK-MMV"/>
+                                    <constraint firstAttribute="width" constant="24" id="qfo-eY-5fK"/>
+                                </constraints>
+                                <state key="normal" image="close_sdk_login_14x14_"/>
+                                <connections>
+                                    <action selector="closeLoginPopViewButtonClicked" destination="2IN-yl-Q8Q" eventType="touchUpInside" id="RtI-WL-fZr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brS-dn-oxw" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="27" y="266.5" width="266" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tvN-rD-AIZ"/>
+                                </constraints>
+                                <state key="normal" title="微信登录">
+                                    <color key="titleColor" red="0.20784313730000001" green="0.75294117650000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20784313730000001" green="0.75294117650000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHy-a2-c6P" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="27" y="220.5" width="266" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="j0y-bk-62v"/>
+                                </constraints>
+                                <state key="normal" title="手机登录">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.97254901959999995" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAX-Td-Ws9" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="27" y="312.5" width="266" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ux2-9K-OgF"/>
+                                </constraints>
+                                <state key="normal" title="QQ登录">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.64705882349999999" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40784313729999999" green="0.64705882349999999" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="trailing" secondItem="OHy-a2-c6P" secondAttribute="trailing" id="16i-t0-XLe"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="leading" secondItem="gQt-uh-ida" secondAttribute="leading" constant="27" id="4vw-1H-Rcv"/>
+                            <constraint firstItem="rLJ-oy-KQM" firstAttribute="top" secondItem="gQt-uh-ida" secondAttribute="top" constant="10" id="IiO-cM-imD"/>
+                            <constraint firstItem="gQt-uh-ida" firstAttribute="bottom" secondItem="djW-TH-4ds" secondAttribute="bottom" constant="35" id="JFg-bW-8ep"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="centerX" secondItem="ebv-03-R88" secondAttribute="centerX" id="Nhq-MZ-Ia5"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="top" secondItem="OHy-a2-c6P" secondAttribute="bottom" constant="11" id="Okj-Dw-cuA"/>
+                            <constraint firstItem="9Wq-cm-1Ep" firstAttribute="top" secondItem="rLJ-oy-KQM" secondAttribute="bottom" constant="16" id="TnA-Bh-bI8"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="centerX" secondItem="djW-TH-4ds" secondAttribute="centerX" id="U9D-RS-M03"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="centerX" secondItem="9Wq-cm-1Ep" secondAttribute="centerX" id="WlK-NL-e1s"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="trailing" secondItem="MAX-Td-Ws9" secondAttribute="trailing" id="XTy-5C-p86"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="leading" secondItem="MAX-Td-Ws9" secondAttribute="leading" id="bfA-Lz-8Uy"/>
+                            <constraint firstItem="MAX-Td-Ws9" firstAttribute="top" secondItem="brS-dn-oxw" secondAttribute="bottom" constant="11" id="r5N-R4-RCO"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="leading" secondItem="OHy-a2-c6P" secondAttribute="leading" id="s2w-yD-usg"/>
+                            <constraint firstItem="rLJ-oy-KQM" firstAttribute="leading" secondItem="gQt-uh-ida" secondAttribute="leading" constant="286" id="u1D-Ls-ZrP"/>
+                            <constraint firstItem="brS-dn-oxw" firstAttribute="centerY" secondItem="ebv-03-R88" secondAttribute="centerY" id="yog-oS-C7A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gQt-uh-ida"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GN1-9H-yAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close_sdk_login_14x14_" width="14" height="14"/>
+    </resources>
+</document>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol HTVideoViewControllerDelegate : class {
+    func videoViewController(_ videoViewController : HTVideoViewController, targetIndex : Int)
+}
+
 class HTVideoViewController: UIViewController {
 
     override func viewDidLoad() {
